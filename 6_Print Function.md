@@ -8,7 +8,8 @@ Note that "...." represents the consecutive values in between.<br>
 
 Print the string 5.
 ```
-12345```
+12345
+```
 
 ------------------------------------------------------------------------------------
 ```python
