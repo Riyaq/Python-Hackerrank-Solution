@@ -22,7 +22,7 @@ CDC
 
 
 This slicing operation is a way to extract a portion of a string in Python. The syntax is 
-```
+```python
 string[start:end]
 ```
 where **start** is the index to start from (inclusive) and <br>
@@ -30,7 +30,6 @@ where **start** is the index to start from (inclusive) and <br>
 
 **string[i:i+substring_length]** is a slicing operation that extracts a portion of the string starting from index i<br>
  and ending at index **i+substring_length-1** <br>
-It creates a new substring from the original string.
-For example, if string is "Hello, world!" and i is 6, and substring_length
- is 5, then string[i:i+substring_length]
- would evaluate to "world".
+It creates a new substring from the original string.<br>
+For example, if string is "Hello, world!" and i is 6, and substring_length<br>
+ is 5, then string[i:i+substring_length] would evaluate to **"world"**
