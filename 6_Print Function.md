@@ -23,14 +23,13 @@ if __name__ == '__main__':
 ```
 ------------------------------------------------------------------------------------
 ```python
-def print_consecutive_numbers(n):
-  i=1
-  while(i<=n):
+def print_numbers(n):
+    for i in range(1, n+1):
         print(i, end="")
-        i+=1
-if__name__='__main__':
-   n = int(input())
-   print_consecutive_numbers(n)
+    print()
+
+n = int(input())
+print_numbers(n)
 ```
 ------------------------------------------------------------------------------------
 
