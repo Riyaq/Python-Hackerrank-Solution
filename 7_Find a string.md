@@ -41,7 +41,7 @@ print("Number of occurrences:", occurrences)
 The purpose of this loop is to iterate over the indices of the string<br>
  where the **substring** can potentially be found. The loop will iterate <br>
 ```python
-len(string) - substring_length + 1
+for i in range(len(string) - substring_length + 1):
 ```
  times, allowing for each possible starting position of the substring within the string
 
