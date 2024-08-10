@@ -43,7 +43,12 @@ The purpose of this loop is to iterate over the indices of the string<br>
 ```python
 for i in range(len(string) - substring_length + 1):
 ```
- will iterate len(string) - substring_length + 1 times, allowing for each possible starting position of the substring within the string
+ will iterate **len(string) - substring_length + 1** times, allowing for each possible starting position of the substring within the string
+
+ --> 
+ **len(string) - substring_length + 1**<br>
+ calculates the maximum number of iterations for the loop. It represents the number of starting positions in the <br>
+string where the substring can fit completely.
 
 -------------------------------------------------------------------------------------------------------
 ```python
