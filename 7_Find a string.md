@@ -17,12 +17,31 @@ CDC
 
 **Solution**
 ```python
+def count_substring(string, substring):
+    count = 0
+    substring_length = len(substring)
+    for i in range(len(string) - substring_length + 1):
+        if string[i:i+substring_length] == substring:
+            count += 1
+    return count
 
+# Read the input strings
+original_string = input("Enter the original string: ")
+substring = input("Enter the substring: ")
+
+# Count the occurrences of the substring in the original string
+occurrences = count_substring(original_string, substring)
+
+# Print the result
+print("Number of occurrences:", occurrences)
 ```
 
 -------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
+```python
+ if string[i:i+substring_length] == substring:
+```
 This slicing operation is a way to extract a portion of a string in Python. The syntax is 
 ```python
 string[start:end]
