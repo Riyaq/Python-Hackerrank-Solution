@@ -1,4 +1,4 @@
-Given an integer n perform the following conditional actions:<br>
+Q.Given an integer n perform the following conditional actions:<br>
 
 -If n is odd, print Weird<br>
 -If n is even and in the inclusive range of 2 to 5 , print Not Weird<br>
