@@ -17,3 +17,13 @@ CDC
 
 **Solution**
 ```python
+
+```
+
+
+This slicing operation is a way to extract a portion of a string in Python. The syntax is 
+```
+string[start:end]
+```
+where **start** is the index to start from (inclusive) and <br>
+**end** is the index to end at (exclusive).
