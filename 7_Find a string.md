@@ -38,6 +38,8 @@ print("Number of occurrences:", occurrences)
 
 -------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
+Explanation
+------------
 The purpose of this loop is to iterate over the indices of the string<br>
  where the **substring** can potentially be found. The loop<br>
 ```python
