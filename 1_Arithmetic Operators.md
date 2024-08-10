@@ -1,4 +1,4 @@
-# Task The provided code stub reads two integers from STDIN,  and . Add code to print three lines where:
+# The provided code stub reads two integers from STDIN, a and b . Add code to print three lines where:
 
 1. The first line contains the sum of the two numbers.<br>
 2. The second line contains the difference of the two numbers (first - second).<br>
