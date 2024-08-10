@@ -34,5 +34,9 @@ print_numbers(n)
 ------------------------------------------------------------------------------------
 
 
+In python, the print() function by default adds a new line (\n) at the end of output.<br>
+Means if you use print() multiple time , each output will be printed on a new line.<br>
+As there I don't want new line so using end=""
+
 
 
