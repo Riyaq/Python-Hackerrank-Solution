@@ -35,4 +35,18 @@ ar = []
 p = 0
 ```
 <mark>ar</mark> is an empty list that will store the result (a list of lists).<br>
-<mark>p</mark> is used as an index to keep track of the position in ar when appending new lists.
+<mark>p</mark> is used as an index to keep track of the position in ar when appending new lists.<br>
+Nested Loop-<br>
+```python
+for i in range(x + 1):
+    for j in range(y + 1):
+        for k in range(z + 1):
+            if i + j + k != n:
+                ar.append([])
+                ar[p] = [i, j, k]
+                p += 1
+```
+<mark style="background-color: lightblue">i</mark> ranges from 0 to x (inclusive).<br>
+<mark style="background-color: lightblue">j</mark> ranges from 0 to y (inclusive).<br>
+<mark style="background-color: lightblue">k</mark> ranges from 0 to z (inclusive).<br>
+
