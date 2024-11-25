@@ -1,5 +1,5 @@
-Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given n scores.<br>
-Store them in a list and find the score of the runner-up.<br>
+[Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given n scores.<br>
+Store them in a list and find the score of the runner-up](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem?isFullScreen=true).<br>
 <br>
 
 **Input Format** <br>
