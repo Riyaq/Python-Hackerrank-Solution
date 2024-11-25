@@ -12,7 +12,7 @@ You are given the year, and you have to write a function to check if the year is
 Note that you have to complete the function and remaining code is given as template.<br>
 [Link](https://www.hackerrank.com/challenges/write-a-function/problem?isFullScreen=true)
 
-**Solution**
+**Solution 1**
 ```python
 def is_leap(year):
     return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
@@ -20,6 +20,7 @@ def is_leap(year):
 year = int(input())
 print(is_leap(year))
 ```
+**Solution 2**
 ```python
 def is_leap(year):
     leap = False
@@ -32,7 +33,7 @@ def is_leap(year):
 
 year = int(input())
 ```
-
+**Solution 3**
 ```python
 def is_leap(year):
     if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
