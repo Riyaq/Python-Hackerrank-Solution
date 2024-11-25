@@ -36,7 +36,8 @@ p = 0
 ```
 ><mark>ar</mark> is an empty list that will store the result (a list of lists).<br>
 ><mark>p</mark> is used as an index to keep track of the position in ar when appending new lists.<br>
-Nested Loop-<br>
+
+### Nested Loop-<br>
 ```python
 for i in range(x + 1):
     for j in range(y + 1):
