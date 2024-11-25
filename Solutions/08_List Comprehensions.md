@@ -34,25 +34,25 @@ Explanation:<br>
 ar = []
 p = 0
 ```
-<mark>ar</mark> is an empty list that will store the result (a list of lists).<br>
-<mark>p</mark> is used as an index to keep track of the position in ar when appending new lists.<br>
+><mark>ar</mark> is an empty list that will store the result (a list of lists).<br>
+><mark>p</mark> is used as an index to keep track of the position in ar when appending new lists.<br>
 Nested Loop-<br>
 ```python
 for i in range(x + 1):
     for j in range(y + 1):
         for k in range(z + 1):
 ```
-<mark style="background-color: lightblue">i</mark> ranges from 0 to x (inclusive).<br>
-<mark style="background-color: lightblue">j</mark> ranges from 0 to y (inclusive).<br>
-<mark style="background-color: lightblue">k</mark> ranges from 0 to z (inclusive).<br>
+><mark>i</mark> ranges from 0 to x (inclusive).<br>
+><mark">j</mark> ranges from 0 to y (inclusive).<br>
+><mark">k</mark> ranges from 0 to z (inclusive).<br>
 ```python
             if i + j + k != n:
                 ar.append([])
                 ar[p] = [i, j, k]
                 p += 1
 ```
-For each combination of i, j, and k, the program checks if the sum <mark>i + j + k</mark> is not equal to n.<br>
-If <mark>i + j + k != n</mark>, then the combination [i, j, k] is appended to the list ar.<br>
+>For each combination of i, j, and k, the program checks if the sum <mark>i + j + k</mark> is not equal to n.<br>
+>If <mark>i + j + k != n</mark>, then the combination [i, j, k] is appended to the list ar.<br>
 <br>
 Appending Combinations to ar:
 
