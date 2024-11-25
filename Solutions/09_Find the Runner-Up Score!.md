@@ -22,3 +22,14 @@ Sample Output :
 5
 ```
 ---------------------------------------
+### Solution 1
+```python
+if __name__ == '__main__':
+    n = int(input("Enter how many participant: "))
+    arr = map(int, input("Enter the scores here: ").split())
+
+    print(sorted(set(arr), reverse=True)[1])
+```
+
+### Solution 2
+
