@@ -1,7 +1,3 @@
 # Python-Hackerrank-Question
 
-Given an array of integers nums, you start with an initial positive value startValue.
-
-In each iteration, you calculate the step by step sum of startValue plus elements in nums (from left to right).
-
-Return the minimum positive value of startValue such that the step by step sum is never less than 1
+consider an array of integers and a non zero positive starting value x. A running sum is calculated by adding each element of the array to x consecutively. determine the minimum value of x such that the running sum is at least 1 after every iteration
