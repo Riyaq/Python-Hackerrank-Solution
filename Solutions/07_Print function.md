@@ -32,7 +32,17 @@ n = int(input())
 print_numbers(n)
 ```
 ------------------------------------------------------------------------------------
+```python
+def print_func(n):
+    i = 1
+    while i <= n:
+        print(i, end="")
+        i += 1
 
+n = int(input())
+print_func(n)
+```
+-------------------------------------------------------------------------------------
 
 In python, the print() function by default adds a new line (\n) at the end of output.<br>
 Means if you use print() multiple time , each output will be printed on a new line.<br>
