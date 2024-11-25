@@ -14,3 +14,9 @@ Note that you have to complete the function and remaining code is given as templ
 
 **Solution**
 ```python
+def is_leap(year):
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+
+year = int(input())
+print(is_leap(year))
+```
