@@ -83,6 +83,7 @@ if __name__ == '__main__':
     print(nums)
 ```
 --------------
+**Example**
 For two dimentional the code will work like -<br>
 You are given two integers x and y . You need to find out the ordered pairs ( i , j ) , such that ( i + j ) is not equal to n and print them.<br>
 ( 0 <= i <= x ) and ( 0 <= j <= y) This is the code if we dont use list comprehensions in Python.<br>
