@@ -54,7 +54,7 @@ for i in range(x + 1):
 ```
 >For each combination of i, j, and k, the program checks if the sum <mark>i + j + k</mark> is not equal to n.<br>
 >If <mark>i + j + k != n</mark>, then the combination [i, j, k] is appended to the list ar.<br>
-<br>
+
 **Appending Combinations to ar:**
 
 >_Each time the condition if i + j + k != n is True, the code appends an empty list [] to ar and then fills the list at index p with [i, j, k].
