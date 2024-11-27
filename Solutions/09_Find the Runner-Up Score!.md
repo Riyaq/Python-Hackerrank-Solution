@@ -34,8 +34,8 @@ if __name__ == '__main__':
 ### Solution 2
 ```python
 def runner_up():
-    n = int(input("Enter the count of participants: "))  # This takes the number of participants
-    arr = list(map(int, input("Enter elements separated by spaces: ").split()))  # Convert input into a list of integers
+    n = int(input("Enter the count of participants: "))  # This takes the number of participants remove the place holder.
+    arr = list(map(int, input("Enter elements separated by spaces: ").split()))  # Convert input into a list of integers remove the place holder.
 
     # Step 1: Remove duplicates by converting the list to a set and sort it in descending order
     sorted_scores = sorted(set(arr), reverse=True)
