@@ -32,4 +32,21 @@ if __name__ == '__main__':
 ```
 
 ### Solution 2
+```python
+def runner_up():
+    n = int(input("Enter the count of participants: "))  # This takes the number of participants
+    arr = list(map(int, input("Enter elements separated by spaces: ").split()))  # Convert input into a list of integers
 
+    # Step 1: Remove duplicates by converting the list to a set and sort it in descending order
+    sorted_scores = sorted(set(arr), reverse=True)
+
+    # Step 2: Ensure there are at least two unique scores
+    if len(sorted_scores) > 1:
+        print(f"The runner-up score is: {sorted_scores[1]}")
+    else:
+        print("No runner-up, all participants have the same score.")
+
+
+# Call the function
+runner_up()
+```
