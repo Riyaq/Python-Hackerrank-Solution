@@ -50,3 +50,14 @@ The lowest grade of  belongs to Tina. The second lowest grade of  belongs to bot
 so we order their names alphabetically and print each name on a new line.
 
 -----------------------------------------
+### Given code
+```python
+if __name__ == '__main__':
+    for _ in range(int(input())): # Inside this loop you are asking the ser how many students do you have.
+        name = input()            # Once user input the number how many then loop stats to take name and score input that many time.If you have 10 students this loop will run 10 times. In each round it will get a name and a score.
+        score = float(input())
+```
+-----------------------------------------
+### Solution
+```python
+
