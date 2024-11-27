@@ -60,5 +60,54 @@ if __name__ == '__main__':
 -----------------------------------------
 ### Solution
 ```python
+def sort_students(names_scores):
+    # Create a list to store all the scores
+    scores = []
+    
+    # Extract scores from each student's data and append to scores list
+    for student in names_scores:
+        scores.append(student[1])
+
+    # Sort the scores and remove duplicates by converting to a set
+    sorted_scores = sorted(set(scores))
+
+    # If there are fewer than two distinct scores, return nothing (no second lowest score)
+    if len(sorted_scores) < 2:
+        return
+
+    # The second lowest score will be the second element in the sorted unique scores list
+    second_lowest = sorted_scores[1]
+
+    # Create a list to store the names of students who have the second lowest score
+    name_second_lowest = []
+
+    # Iterate over the students to find those with the second lowest score
+    for student in names_scores:
+        if student[1] == second_lowest:
+            name_second_lowest.append(student[0])
+
+    # Sort the names alphabetically
+    name_second_lowest = sorted(name_second_lowest)
+
+    # Print the sorted names
+    for name in name_second_lowest:
+        print(name)
+
+
+# Execution starts here
+if __name__ == '__main__':
+    # Initialize an empty list to store the students' name and score pairs
+    names_scores = []
+    
+    # Read the number of students
+    for _ in range(int(input())):  # Input number of students
+        name = input()  # Input student name
+        score = float(input())  # Input student score (converted to float)
+        # Append the name and score as a list [name, score]
+        names_scores.append([name, score])
+
+    # Call the function to sort and print students with the second lowest score
+    sort_students(names_scores)
+
 ```
-<img width="1219" alt="Screenshot 2024-11-27 at 12 17 30 AM" src="https://github.com/user-attachments/assets/4725aba5-93f9-423b-8c48-c9022e51b67c">
+More details - python/List Nested list/NestedloopJupyter.ipynb
