@@ -60,4 +60,5 @@ if __name__ == '__main__':
 -----------------------------------------
 ### Solution
 ```python
-
+```
+<img width="1219" alt="Screenshot 2024-11-27 at 12 17 30 AM" src="https://github.com/user-attachments/assets/4725aba5-93f9-423b-8c48-c9022e51b67c">
