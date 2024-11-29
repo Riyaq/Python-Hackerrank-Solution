@@ -58,7 +58,7 @@ if __name__ == '__main__':
         score = float(input())
 ```
 -----------------------------------------
-### Solution
+### Solution 1
 ```python
 def sort_students(names_scores):
     # Create a list to store all the scores
@@ -109,5 +109,36 @@ if __name__ == '__main__':
     # Call the function to sort and print students with the second lowest score
     sort_students(names_scores)
 
+```
+### Solution 2 
+Using list comprehension
+```python
+def sort_student(names_scores):
+    # Create a set of unique scores
+    scores = {student[1] for student in names_scores}
+    
+    # Sort the scores and find the second lowest score
+    sorted_scores = sorted(scores)
+    second_lowest = sorted_scores[1]
+    
+    # Collect names of students who have the second lowest score
+    names_second_lowest = [student[0] for student in names_scores if student[1] == second_lowest]
+    
+    # Sort the names alphabetically
+    names_second_lowest.sort()
+    
+    # Print the names of students with the second lowest score
+    for name in names_second_lowest:
+        print(name)
+
+# Execution
+if __name__ == '__main__':
+    names_scores = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        names_scores.append([name, score])
+    
+    sort_student(names_scores)
 ```
 More details - python/List Nested list/NestedloopJupyter.ipynb
