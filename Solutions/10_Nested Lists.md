@@ -60,58 +60,45 @@ if __name__ == '__main__':
 -----------------------------------------
 ### Solution 1
 ```python
-def sort_students(names_scores):
-    # Create a list to store all the scores
-    scores = []
-    
-    # Extract scores from each student's data and append to scores list
+def sort_student(names_scores):
+    # Create an empty set to store unique scores (using a normal loop)
+    scores = set()
     for student in names_scores:
-        scores.append(student[1])
-
-    # Sort the scores and remove duplicates by converting to a set
-    sorted_scores = sorted(set(scores))
-
-    # If there are fewer than two distinct scores, return nothing (no second lowest score)
-    if len(sorted_scores) < 2:
-        return
-
-    # The second lowest score will be the second element in the sorted unique scores list
+        scores.add(student[1])  # Add the score to the set (automatically ensures uniqueness)
+    
+    # Convert the set to a sorted list
+    sorted_scores = sorted(scores)
+    
+    # The second-lowest score is at index 1
     second_lowest = sorted_scores[1]
-
-    # Create a list to store the names of students who have the second lowest score
-    name_second_lowest = []
-
-    # Iterate over the students to find those with the second lowest score
+    
+    # Create an empty list to store names of students with the second-lowest score
+    names_second_lowest = []
     for student in names_scores:
         if student[1] == second_lowest:
-            name_second_lowest.append(student[0])
-
+            names_second_lowest.append(student[0])  # Add the name to the list
+    
     # Sort the names alphabetically
-    name_second_lowest = sorted(name_second_lowest)
-
-    # Print the sorted names
-    for name in name_second_lowest:
+    names_second_lowest.sort()
+    
+    # Print the names of students with the second-lowest score
+    for name in names_second_lowest:
         print(name)
 
-
-# Execution starts here
+# Execution
 if __name__ == '__main__':
-    # Initialize an empty list to store the students' name and score pairs
     names_scores = []
-    
-    # Read the number of students
-    for _ in range(int(input())):  # Input number of students
-        name = input()  # Input student name
-        score = float(input())  # Input student score (converted to float)
-        # Append the name and score as a list [name, score]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
         names_scores.append([name, score])
+    
+    sort_student(names_scores)
 
-    # Call the function to sort and print students with the second lowest score
-    sort_students(names_scores)
 
 ```
 ### Solution 2 
-Using list comprehension
+Using list comprehension &  set comprehension.
 ```python
 def sort_student(names_scores):
     # Create a set of unique scores
