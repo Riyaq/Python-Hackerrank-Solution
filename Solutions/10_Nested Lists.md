@@ -129,3 +129,8 @@ if __name__ == '__main__':
     sort_student(names_scores)
 ```
 More details - python/List Nested list/NestedloopJupyter.ipynb
+
+-------
+### List comprehension-
+Syntax- <br>
+<mark>[expression for item in iterable if condition]</mark>
