@@ -133,4 +133,18 @@ More details - python/List Nested list/NestedloopJupyter.ipynb
 -------
 ### List comprehension-
 Syntax- <br>
-<mark>[expression for item in iterable if condition]</mark>
+```python
+[expression for item in iterable if condition]
+```
+Example - <br>
+```python
+names_second_lowest = [student[0] for student in names_scores if student[1] == second_lowest]
+```
+<img width="783" alt="Screenshot 2024-11-29 at 1 35 33 AM" src="https://github.com/user-attachments/assets/c2d4aee2-93cc-4e41-9f00-d344a5ec4300"><br>
+
+--------
+### Set comprehension- 
+Syntax - <br>
+```python
+{expression for item in iterable if condition}
+```
