@@ -61,29 +61,31 @@ if __name__ == '__main__':
 ### Solution 1
 ```python
 def sort_student(names_scores):
-    # Create an empty set to store unique scores (using a normal loop)
-    scores = set()
+    # Create a list to store all scores
+    scores = []
     for student in names_scores:
-        scores.add(student[1])  # Add the score to the set (automatically ensures uniqueness)
-    
-    # Convert the set to a sorted list
-    sorted_scores = sorted(scores)
-    
-    # The second-lowest score is at index 1
+        scores.append(student[1])  # Add each student's score to the list
+
+    # Convert the list to a set to remove duplicates
+    scores_set = set(scores)
+
+    # Sort the set and get the second-lowest score
+    sorted_scores = sorted(scores_set)
     second_lowest = sorted_scores[1]
-    
-    # Create an empty list to store names of students with the second-lowest score
+
+    # Create a list to store names of students with the second-lowest score
     names_second_lowest = []
     for student in names_scores:
         if student[1] == second_lowest:
-            names_second_lowest.append(student[0])  # Add the name to the list
-    
+            names_second_lowest.append(student[0])  # Add the student's name
+
     # Sort the names alphabetically
     names_second_lowest.sort()
-    
+
     # Print the names of students with the second-lowest score
     for name in names_second_lowest:
         print(name)
+
 
 # Execution
 if __name__ == '__main__':
@@ -92,8 +94,9 @@ if __name__ == '__main__':
         name = input()
         score = float(input())
         names_scores.append([name, score])
-    
+
     sort_student(names_scores)
+
 
 
 ```
