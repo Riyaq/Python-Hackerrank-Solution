@@ -21,6 +21,12 @@ Sample Input :
 Sample Output :
 5
 ```
+### Given code
+```python
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+```
 ---------------------------------------
 ### Solution 1
 ```python
