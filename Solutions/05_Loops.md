@@ -8,7 +8,7 @@ The list of non-negative integers that are less than n is  . Print the square of
 1
 4
 ```
-**Solution**
+**Solution 1**
 
 
 ```python
@@ -18,4 +18,10 @@ while i<n:
 
     print(i*i)
     i += 1
+```
+**Solution 2**
+```python
+n = int(input("Enter an integer: "))
+for i in range(n):
+    print(i * i)
 ```
