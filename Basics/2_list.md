@@ -17,3 +17,11 @@ sorting_the_array=sorted(arr)
 print("The maximum number is :",sorting_the_array[-1])
 print("The minimum number is :",sorting_the_array[0])
 ```
+----------------------
+### Reverse a list
+```python
+arr=[]
+arr=[int(x) for x in input(f"Enter elements: ").split()]
+arr.reverse()
+print(arr)
+```
