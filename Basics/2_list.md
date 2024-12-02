@@ -1,4 +1,4 @@
-### 1 Find the Maximum and Minimum in an Array
+### 1. Find the Maximum and Minimum in an Array
 **Solution 1**
 ```python
 arr=[] # Initializing an empty list
@@ -18,7 +18,7 @@ print("The maximum number is :",sorting_the_array[-1])
 print("The minimum number is :",sorting_the_array[0])
 ```
 ----------------------
-### 2 Reverse a list
+### 2. Reverse a list
 ```python
 arr=[]
 arr=[int(x) for x in input(f"Enter elements: ").split()]
@@ -26,7 +26,7 @@ arr.reverse()
 print(arr)
 ```
 ---------------------
-### 3 Remove Duplicates from an Array
+### 3. Remove Duplicates from an Array
 ```python
 arr=[]
 arr=[int(x) for x in input(f"Enter the elements separated by space: ").split()]
